@@ -112,19 +112,15 @@ body{
 }
 .nav-bar-left footer p i{
   font-size: 1.5em;
+  padding: 6px;
   vertical-align: middle;
+  background-color: #808080;
+  border-radius: 100%;
 }
 .nav-bar-left footer p span{
   padding-left: 5px;
   font-weight: bold;
   vertical-align: middle;
-}
-.main-box{
-  width: 85%;
-  height: 900px;
-  background-color: #141922;
-  overflow: hidden;
-  overflow-y: scroll;
 }
 .banner{
   display: flex;
@@ -135,7 +131,6 @@ body{
   top: 0;
   width: 85%;
   background-color: rgba(0, 0, 0, 0.5);
-  text-align: right;
 }
 .banner a{
   color: white;
@@ -155,8 +150,111 @@ body{
   background-color: white;
   color: black;
 }
+.main-box{
+  width: 85%;
+  height: 900px;
+  background-color: #141922;
+  overflow: hidden;
+  overflow-y: scroll;
+}
 .play-bar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
   height: 74px;
   background-color: #282828;
+}
+.play-bar .song-title{
+  display: flex;
+  align-items: center;
+}
+.play-bar .album img{
+  height: 50px;
+  padding-left: 10px;
+  vertical-align: middle;
+}
+.play-bar .title{
+  margin-left: 20px;
+}
+.play-bar .title h4{
+  color: white;
+  font-size: 0.9em;
+}
+.play-bar .title p{
+  color: #686868;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+.play-bar .icons{
+  margin-left: 40px;
+  color: #686868;
+}
+.play-bar .icons i{
+  padding-left: 20px;
+  transition: 0.5s;
+}
+.play-bar .icons i:hover{
+  color: white;
+}
+.play-bar .player{
+  color: white;
+  text-align: center;
+}
+.play-bar .player .button{
+  margin-bottom: 5px;
+}
+.play-bar .player i{
+  font-size: 1.2em;
+  padding-right: 30px;
+  cursor: pointer;
+}
+.play-bar .time-music p{
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0.7em;
+  padding: 0 8px;
+}
+.play-bar .time-music span{
+  position: relative;
+  display: inline-block;
+  width: 400px;
+  height: 5px;
+  background-color: #686868;
+  border-radius: 3px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.play-bar .time-music span span{
+  position: absolute;
+  left: 0;
+  width: 20%;
+  background-color: #C1C1C1;
+  z-index: 1;
+}
+.play-bar .control-bar{
+  margin-right: 10px;
+}
+.play-bar .control-bar i{
+  color: white;
+  font-size: 0.9em;
+  padding: 0 5px;
+  cursor: pointer;
+}
+.play-bar .control-bar span{
+  position: relative;
+  display: inline-block;
+  width: 150px;
+  height: 5px;
+  background-color: #686868;
+  border-radius: 3px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.play-bar .control-bar span span{
+  position: absolute;
+  left: 0;
+  width: 20%;
+  background-color: #C1C1C1;
+  z-index: 1;
 }
