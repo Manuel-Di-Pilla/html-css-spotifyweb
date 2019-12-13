@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body{
-  font-family: font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 .ul{
   list-style: none;
@@ -16,6 +16,10 @@ body{
   display: block;
   text-decoration: none;
 }
+#selected{
+  border-left: 4px solid #ADFF2F;
+  color: white;
+}
 .general-container{
   height: 100vh;
   width: 100%;
@@ -26,19 +30,106 @@ body{
 .nav-bar-left{
   display: flex;
   width: 15%;
-  height: 580px;
+  height: 900px;
   flex-direction: column;
+  justify-content: space-between;
   background-color: black;
+}
+.nav-bar-left main,
+.nav-bar-left footer{
+  padding-left: 20px;
+}
+.nav-bar-left header a,
+.nav-bar-left main a,
+.nav-bar-left footer a{
+  color: #686868;
+  height: 25px;
+  margin-top: 10px;
+}
+.nav-bar-left img{
+  width: 80%;
+  padding: 20px 20px;
+}
+.nav-bar-left header a .fa-home{
+  padding-left: 16px;
+}
+.nav-bar-left header a{
+  transition: 1s;
+}
+.nav-bar-left header a:hover{
   color: white;
+}
+.nav-bar-left header a .fa-search,
+.nav-bar-left header a .fa-grip-lines-vertical{
+  padding-left: 20px;
+}
+.nav-bar-left header i{
+  font-size: 1.3em;
+  padding-right: 5px;
+}
+.nav-bar-left main{
+  flex-grow: 1;
+  margin: 20px 0;
+}
+.nav-bar-left main h5{
+  color: #686868;
+  color: white;
+}
+.nav-bar-left main a{
+  margin: 10px 0;
+  transition: 0.5s;
+}
+.nav-bar-left main a i{
+  font-size: 1.8em;
+  padding-right: 10px;
+  vertical-align: middle;
+}
+.nav-bar-left main a span{
+  vertical-align: middle;
+}
+.nav-bar-left main a:hover{
+  color: white;
+}
+.nav-bar-left main li{
+  color: #686868;
+}
+.nav-bar-left main li{
+  padding: 10px 0;
+}
+.nav-bar-left footer a{
+  padding-bottom: 5px;
+  transition: 0.5s;
+}
+.nav-bar-left footer a:hover{
+  color: white;
+}
+.nav-bar-left footer p{
+  padding-top: 5px;
+  border-top: 1px solid #686868;
+  color: white;
+  margin-right: 20px;
+  margin-bottom: 5px;
+}
+.nav-bar-left footer p i{
+  font-size: 1.5em;
+  vertical-align: middle;
+}
+.nav-bar-left footer p span{
+  padding-left: 5px;
+  font-weight: bold;
+  vertical-align: middle;
 }
 .main-box{
   width: 85%;
-  height: 580px;
+  height: 900px;
   background-color: #141922;
   overflow: hidden;
   overflow-y: scroll;
 }
 .banner{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   position: fixed;
   right: 0;
   top: 0;
@@ -46,7 +137,24 @@ body{
   background-color: rgba(0, 0, 0, 0.5);
   text-align: right;
 }
-
+.banner a{
+  color: white;
+  border: 1px solid white;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-right: 20px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: 0.5s;
+}
+.banner a:hover{
+  background-color: white;
+  color: black;
+}
 .play-bar{
   width: 100%;
   height: 74px;
