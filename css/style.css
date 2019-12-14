@@ -157,6 +157,210 @@ body{
   overflow: hidden;
   overflow-y: scroll;
 }
+.main-box .nav-bar ul{
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+}
+.main-box .nav-bar ul li{
+  padding-right: 20px;
+}
+.main-box .nav-bar ul li .selected-nav:after{
+  content: "";
+  display: block;
+  height: 3px;
+  width: 20px;
+  margin: 2px auto;
+  background-color: #ADFF2F;
+}
+.main-box .nav-bar ul li:last-child{
+  padding-right: 0;
+}
+.main-box .nav-bar ul li a{
+  color: #686868;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  font-weight: 600;
+}
+.main-box .content-main{
+  margin: 30px 20px;
+}
+.main-box .content-main .title h2{
+  color: white;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.main-box .content-main::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+.main-box .content-main .music-box{
+  float: left;
+  position: relative;
+  width: calc(100% / 6);
+}
+.main-box .content-main .music-box h4,
+.main-box .content-main .music-box p{
+  text-align: center;
+}
+.main-box .content-main .music-box .music-image{
+  height: 170px;
+}
+.main-box .content-main .music-box .music-image img{
+  height: 100%;
+}
+.main-box .content-main .music-box h4{
+  margin: 5px 0;
+  color: white;
+  font-weight: 600;
+}
+.main-box .content-main .music-box p{
+  color: #686868;
+  font-size: 0.8em;
+  font-weight: 600;
+}
+.main-box .content-main .music-image .play{
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 170px;
+  height: 170px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.main-box .content-main .music-image .play i{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3em;
+  color: white;
+}
+.main-box .content-main .music-image:hover .play{
+  display: block;
+  cursor: pointer;
+}
+.main-box .customize-option::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+.main-box .customize-option{
+  margin-top: 70px;
+  margin-left: 20px;
+}
+.main-box .customize-option h2{
+  color: white;
+  font-weight: 600;
+}
+.main-box .customize-option p{
+  color: #686868;
+  font-weight: bold;
+  font-size: 0.9em;
+  margin-top: 15px;
+}
+.main-box .customize-option .album {
+  float: left;
+  text-align: center;
+  margin-right: 20px;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+.main-box .customize-option .album h4{
+  color: white;
+  font-weight: 600;
+  margin-top: 20px;
+}
+.main-box .customize-option .album .image-option{
+  position: relative;
+  width: 180px;
+  height: 180px;
+}
+.main-box .customize-option .album .image-option .play{
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 180px;
+  height: 180px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.main-box .customize-option .album .image-option .play i{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3em;
+  color: white;
+}
+.main-box .customize-option .album .image-option:hover .play{
+  display: block;
+  cursor: pointer;
+}
+.main-box .customize-option .album .image-option img{
+  width: 100%;
+  cursor: pointer;
+}
+.main-box .advised{
+  margin-left: 20px;
+  margin-bottom: 60px;
+}
+.main-box .advised::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+.main-box .advised .music-choice{
+  float: left;
+  height: 180px;
+  width: 180px;
+  padding-right: 20px;
+  margin-top: 20px;
+}
+.main-box .advised .advised-title h2{
+  color: white;
+  font-weight: 600;
+}
+.main-box .advised .advised-title p{
+  color: #686868;
+  font-weight: bold;
+  margin-top: 15px;
+}
+.main-box .advised .music-choice img{
+  width: 100%;
+  border-radius: 100%;
+}
+.main-box .advised .music-choice h4{
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+}
+.main-box .advised .music-choice .img{
+  position: relative;
+}
+.main-box .advised .music-choice .play{
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 160px;
+  height: 160px;
+  border-radius: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.main-box .advised .music-choice .play i{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3em;
+  color: white;
+}
+.main-box .advised .music-choice:hover .play{
+  display: block;
+  cursor: pointer;
+}
 .play-bar{
   display: flex;
   justify-content: space-between;
