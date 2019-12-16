@@ -34,6 +34,31 @@ body{
   flex-direction: column;
   justify-content: space-between;
   background-color: black;
+  z-index: 2;
+}
+.nav-bar-left .icons-xs-screen{
+  display: none;
+  text-align: center;
+}
+.nav-bar-left .icons-xs-screen i{
+  display: block;
+  color: white;
+}
+.nav-bar-left .icons-xs-screen-footer{
+  display: none;
+  text-align: center;
+}
+.nav-bar-left .icons-xs-screen-footer i{
+  display: block;
+  color: #686868;
+  margin-bottom: 10px;
+}
+.nav-bar-left .icons-xs-screen-footer i.fa-user{
+  background-color: #808080;
+  color: white;
+  padding: 5px;
+  border-radius: 100%;
+  margin: 5px 5px;
 }
 .nav-bar-left main,
 .nav-bar-left footer{
@@ -47,14 +72,14 @@ body{
   margin-top: 10px;
 }
 .nav-bar-left img{
-  width: 80%;
+  width: 160px;
   padding: 20px 20px;
 }
 .nav-bar-left header a .fa-home{
   padding-left: 16px;
 }
 .nav-bar-left header a{
-  transition: 1s;
+  transition: 0.3s;
 }
 .nav-bar-left header a:hover{
   color: white;
@@ -77,7 +102,7 @@ body{
 }
 .nav-bar-left main a{
   margin: 10px 0;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 .nav-bar-left main a i{
   font-size: 1.8em;
@@ -98,7 +123,7 @@ body{
 }
 .nav-bar-left footer a{
   padding-bottom: 5px;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 .nav-bar-left footer a:hover{
   color: white;
@@ -144,7 +169,7 @@ body{
   font-size: 0.8em;
   font-weight: 600;
   letter-spacing: 1px;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 .banner a:hover{
   background-color: white;
@@ -184,6 +209,7 @@ body{
   text-transform: uppercase;
   font-size: 0.8em;
   font-weight: 600;
+  transition: 0.3s;
 }
 .main-box .content-main{
   margin: 30px 20px;
@@ -202,16 +228,17 @@ body{
   float: left;
   position: relative;
   width: calc(100% / 6);
+  padding-right: 10px;
 }
 .main-box .content-main .music-box h4,
 .main-box .content-main .music-box p{
   text-align: center;
 }
 .main-box .content-main .music-box .music-image{
-  height: 170px;
+  width: 100%;
 }
 .main-box .content-main .music-box .music-image img{
-  height: 100%;
+  width: 100%;
 }
 .main-box .content-main .music-box h4{
   margin: 5px 0;
@@ -228,8 +255,8 @@ body{
   position: absolute;
   top: 0;
   left: 0;
-  width: 170px;
-  height: 170px;
+  width: 171.6px;
+  height: 171.6px;
   background-color: rgba(0, 0, 0, 0.6);
 }
 .main-box .content-main .music-image .play i{
@@ -399,7 +426,7 @@ body{
 }
 .play-bar .icons i{
   padding-left: 20px;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 .play-bar .icons i:hover{
   color: white;
@@ -500,4 +527,106 @@ body{
 }
 .play-bar .control-bar span span:hover i{
   display: block;
+}
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .nav-bar-left{
+    min-width: 180px;
+  }
+  .main-box .content-main .music-box{
+    width: calc(100% / 4);
+    margin-bottom: 10px;
+  }
+  .main-box .nav-bar ul {
+    display: block;
+    text-align: center;
+  }
+  .main-box .nav-bar ul li{
+    display: inline-block;
+    width: calc(100% / 6);
+    white-space: nowrap;
+  }
+  .play-bar .control-bar{
+    min-width: 240px;
+  }
+  .play-bar .time-music{
+    min-width: 485px;
+  }
+  .play-bar .time-music span{
+    width: 200px;
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 571px){
+  .nav-bar-left{
+    min-width: 180px;
+  }
+  .main-box .content-main .music-box{
+    width: calc(100% / 2);
+    margin-bottom: 10px;
+  }
+  .main-box .nav-bar ul {
+    display: block;
+    text-align: center;
+  }
+  .main-box .nav-bar ul li{
+    display: inline-block;
+    width: calc(100% / 4);
+    margin-top: 10px;
+    white-space: nowrap;
+  }
+  .play-bar .control-bar{
+    min-width: 270px;
+  }
+  .play-bar .control-bar i{
+    white-space: nowrap;
+  }
+  .play-bar .time-music span{
+    width: 150px;
+  }
+  .player .button{
+    min-width: 485px;
+  }
+}
+@media screen and (max-width: 570px){
+  .nav-bar-left{
+    width: 7%;
+  }
+  .nav-bar-left .icons-xs-screen{
+    display: block;
+  }
+  .nav-bar-left .icons-xs-screen i{
+    font-size: 1.2em;
+    margin: 5px 0;
+    cursor: pointer;
+  }
+  .nav-bar-left .icons-xs-screen-footer{
+    display: block;
+    margin-bottom: 0;
+  }
+  .nav-bar-left .icons-xs-screen-footer i{
+    cursor: pointer;
+  }
+  .nav-bar-left header,
+  .nav-bar-left main,
+  .nav-bar-left footer{
+    display: none;
+  }
+  .banner{
+    width: 93%;
+  }
+  .main-box .nav-bar ul {
+    display: block;
+    text-align: center;
+  }
+  .main-box .nav-bar ul li{
+    display: inline-block;
+    width: calc(100% / 5);
+    white-space: nowrap;
+  }
+  .main-box .content-main .music-box{
+    width: calc(100% / 2);
+    margin-bottom: 10px;
+  }
+  .play-bar .time-music span{
+    width: 120px;
+  }
 }
